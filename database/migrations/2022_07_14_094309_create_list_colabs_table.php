@@ -21,8 +21,8 @@ return new class extends Migration
             $table->bigInteger('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users');
 
-            $table->bigInteger('tashe_id')->unsigned()->nullable();
-            $table->foreign('tashe_id')->references('id')->on('taches');
+            $table->bigInteger('activite_id')->unsigned()->nullable();
+            $table->foreign('activite_id')->references('id')->on('activites');
 
 
             $table->timestamps();
